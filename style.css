@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0%;
+    background-image: url("https://images.wallpaperscraft.ru/image/single/dozhd_kapli_bryzgi_161689_2048x1152.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.headContainer {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    box-shadow: 0px 0px 20px;
+    backdrop-filter: blur(8px);
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+#mainTime {
+    min-width: 350px;
+    cursor: default;
+    filter: invert(1);
+    font-size: 80px;
+    font-weight: normal;
+    margin-left: 5%;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.weather {
+    min-width: 60px;
+    height: 60px;
+    margin-left: 2%;
+    background-image: url("https://files.readme.io/48b265b-weather_icon_small_ic_clear3x.png");
+    background-size: cover;
+}
+
+.textWeather {
+    cursor: default;
+    filter: invert(1);
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1;
+    margin-left: 2%;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.searchBox {
+    display: flex;
+    width: 25%;
+    min-width: 275px;
+    align-items: center;
+    margin-right: 5%;
+}
+
+input { 
+    width: 75%;
+    min-width: 275px;
+    height: 25px;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border-style: solid;
+    box-shadow: 0px 0px 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#search {
+    position: relative;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    right: 37px;
+}
+
+main {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.backgroundContainer {
+    width: 43%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 10px 10px;
+}
+
+.cityFlagContainer {
+    cursor: default;
+    display: flex;
+    position: relative;
+    height: 50px;
+    margin: 30px 30px 10px 30px;
+    flex-direction: row;
+}
+
+.cityFlagContainer::before {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    content: '';
+    left: 0;
+    right: 0px;
+    bottom: -5px;
+    height: 2px;
+    background-color: white;
+}
+
+#city {
+    display: flex;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    flex-direction: column-reverse;
+    line-height: 1;
+    filter: invert(1);
+}
+
+#flag {
+    margin: 5%;
+    align-self: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    min-width: 36.5px;
+    height: 36.5px;
+    border-radius: 7px;
+}
+
+.infoContainer {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    overflow: auto;
+    transition: 0.3s;
+}
+
+.infoBox {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 70px;
+    margin: 0px 0px 30px 15px;
+}
+
+.time {
+    min-width: 141.5px;
+    cursor: default;
+    filter: invert(1);
+    font-size: 50px;
+    font-weight: normal;
+    margin-left: 4%;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 5px;
+}
