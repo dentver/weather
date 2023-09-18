@@ -212,6 +212,9 @@ main {
     .backgroundContainer {
         width: 50%;
     }
+    .infoContainer {
+        height: 90vh;
+    }
 }
 
 @media (max-width: 499px) {
