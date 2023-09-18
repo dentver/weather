@@ -59,8 +59,8 @@ body {
 
 .searchBox {
     display: flex;
-    width: 25%;
     min-width: 275px;
+    justify-content: end;
     align-items: center;
     margin-right: 5%;
 }
@@ -95,6 +95,7 @@ main {
 
 .backgroundContainer {
     width: 43%;
+    min-width: 500px;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8px);
@@ -150,7 +151,6 @@ main {
     margin: auto;
     margin-top: 50px;
     overflow: auto;
-    transition: 0.3s;
 }
 
 .infoBox {
@@ -181,4 +181,73 @@ main {
 ::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 5px;
+}
+
+@media (max-width:1000px) {
+    .headContainer {
+        width: auto;
+        height: 180px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container {
+        width: auto;
+        margin-bottom: 5px;
+    }
+    #mainTime{
+        min-width: auto;
+        margin: 0%;
+        font-size: 60px;
+    }
+    .weather {
+        margin: 0%;
+    }
+    .textWeather {
+        margin: 0%;
+        font-size: 30px;
+    }
+    .searchBox {
+        margin: 0px 0px 0px 25px;
+    }
+    .backgroundContainer {
+        width: 50%;
+    }
+}
+
+@media (max-width: 499px) {
+    .headContainer {
+        backdrop-filter: none;
+    }
+    #mainTime {
+        font-size: 40px;
+    }
+    main {
+        justify-content: center;
+    }
+    .backgroundContainer {
+        width: 100%;
+    }
+    .cityFlagContainer {
+        justify-content: center;
+    }
+    #city {
+        font-size: 30px;
+    }
+    #flag{
+        width: 45px;
+        height: 30px;
+        margin-bottom: 0px;
+    }
+    .infoContainer {
+        width: 92%;
+        margin-left: 8%;
+    }
+    .textWeather {
+        max-width: 100px;
+    }
+    .time {
+        display: flex;
+        justify-content: end;
+        font-size: 45px;
+    }
 }
