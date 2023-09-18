@@ -213,11 +213,11 @@ main {
         width: 50%;
     }
     .infoContainer {
-        height: 90vh;
+        height: 80vh;
     }
 }
 
-@media (max-width: 499px) {
+@media only screen and (max-width: 499px) {
     .headContainer {
         backdrop-filter: none;
     }
